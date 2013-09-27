@@ -1,0 +1,37 @@
+body,html {
+	height:100%;	
+	background-color: lightgrey;
+}
+section {   
+	text-align: center;	
+}
+ul {
+	list-style: none;
+}
+.container {
+	max-width: 1024px;	
+	margin: 0 auto;
+	min-height: 100%;
+	border-style:solid;
+	border-width:1px;
+}
+.server-error {   
+	color: red;
+}
+.highlight-text {   	
+	background-color: #FFFF00;
+}
+.tweets-section {	
+	background-color: rgb(255,130,255);
+	background-color: rgba(255,130,255,0.2);	
+	float:left;
+	width: 100%;	
+	max-width: 500px;
+}
+.name {
+	display: inline-block;	
+}
+.bottom {   
+	text-align: right;
+	clear: both;
+}
