@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Topic 3</title>            
+  </head>
+  <body>    
+    <p>Open the Console, please.</p>
+    <script src="scripts/Underscore.js"></script>
+    <script src="scripts/Social.js"></script>           
+    <script src="scripts/Movie.js"></script>
+    <script src="scripts/DownloadableMovie.js"></script>
+    <script src="scripts/MovieObserver.js"></script> 
+    <script src="scripts/Actor.js"></script>     
+    <script>
+      
+      //Test Section 4
+      console.log('*** Test for subtopic 4 ***');
+      var observer = new MovieObserver();
+
+      var lake = new Movie();          
+      lake.set('title','The lake house');
+      lake.set('genre','Drama');          
+
+      var lion = new Movie();          
+      lion.set('title','The lion king');
+      lion.set('genre','Animation');
+
+      lake.addObserver(observer);   
+      lion.addObserver(observer);                   
+
+      lake.play();
+      lion.play();      
+      lion.stop();
+      lake.stop();        
+  
+
+      //Test Section 10
+      console.log('***Test for subtopic 10 ***');
+      _.extend( Movie.prototype, Social );
+      
+      lake.share('Susan');
+      lion.like();
+        
+    </script>
+  </body>
+</html>
