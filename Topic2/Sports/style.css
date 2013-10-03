@@ -1,0 +1,80 @@
+body {
+	background-color: lightgrey;
+}
+footer p {
+	padding: 1%;
+	border-style: double;
+	border-width: 4px;	
+}
+tbody {
+	white-space: nowrap;
+}
+table {
+	width: 100%;
+}
+iframe {
+	width: 100%;
+	height: 300px;
+	border: 0;	
+}
+.editorial h3 {
+	margin: 0.7em 0;
+} 
+.principal-menu {
+	margin: 1%;	
+}
+.pure-skin-mine .pure-menu.pure-menu-horizontal > ul {
+  width: 100%;
+}
+.pure-skin-mine .pure-menu li {
+	text-align: center;
+}
+.pure-skin-mine .pure-table {     
+  border: 1px solid black;
+}
+.pure-skin-mine .pure-table td,
+.pure-skin-mine .pure-table th {
+  border-left: 1px solid black;       
+  /*padding: 0.3em 2.38em;*/  
+  padding: 0;
+}
+.social-menu {	
+	float: right;
+}
+.social-icon {
+	width: 38px;
+	height: 38px;	
+}
+.box {	
+	padding-right: 2%;	
+}
+.center-box {	
+	padding-top: 2%;
+	padding-right: 1%;
+}
+.photo {
+	width: 100px;
+	float: right;
+	border: 2px solid;
+	border-radius: 5px;		
+}
+.editorial-text {
+	border: 1px solid;	
+}
+.editorial a {
+	float: right;
+}
+.advertisment {
+	width: 100%;
+	height: 300px;
+}
+@media (max-width: 600px) {
+  .pure-skin-mine .pure-menu li a {
+  	font-size: 68%;  
+  }
+}
+@media (max-width: 750px) {  
+  .box {
+		padding: 2%;	
+	}
+}

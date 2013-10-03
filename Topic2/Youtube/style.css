@@ -1,0 +1,61 @@
+body {
+	background-color: lightgrey;
+}
+h2 {
+	font-size: 18px;
+	min-height: 38px;
+}
+iframe {
+	width: 100%;
+	height: 250px;
+	border: 0;	
+}
+.search-button {
+	float: left;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	border-color: white;
+}
+.search-input{
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	border-color: white;
+}
+.page-title{
+	font-size: 38px;
+	color: lightgrey;
+}
+.row {	
+  margin-top: 20px;
+}
+.btn { 
+  padding: 4px 12px;
+}
+.container {	
+  max-width: 100%;  
+}
+.music-container div {
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 3%;
+}
+.navbar {
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #999999;  
+}
+.form-group {
+  display: block;
+  padding: 0;
+}
+.form-control:focus {
+	border-color: white;
+}
+.container .navbar-form {
+	width: 100%;
+	margin-right:0;
+	border: none;	
+}
