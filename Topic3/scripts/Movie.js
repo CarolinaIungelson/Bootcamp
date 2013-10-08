@@ -12,12 +12,12 @@ function Movie(){
   };
 
   this.play = function(){
-   var anEvent = new CustomEvent('Playing', { 'detail': this.attributes['title'] });
+   var anEvent = new CustomEvent('Playing', { 'detail': this.attributes.title });
    document.dispatchEvent(anEvent);
   };
 
   this.stop = function(){
-   var anEvent = new CustomEvent('Stopped', { 'detail': this.attributes['title'] });
+   var anEvent = new CustomEvent('Stopped', { 'detail': this.attributes.title });
    document.dispatchEvent(anEvent);
   };
 
@@ -58,14 +58,12 @@ function Movie(){
       attributes[attr] = value;
     },
 
-    play: function() {
-      //movieObserver.Notify('Playing ',attributes['title']);
+    play: function() {      
       var anEvent = new CustomEvent('Playing', { 'detail': attributes['title'] });
       document.dispatchEvent(anEvent);
     },
 
-    stop: function() {
-      //movieObserver.Notify('Stopped ',attributes['title']);
+    stop: function() {      
       var anEvent = new CustomEvent('Stopped', { 'detail': attributes['title'] });
       document.dispatchEvent(anEvent);
     },
