@@ -1,4 +1,3 @@
-//This module is for using Movie as a Module
 function DownloadableMovie(){
 
   this.download = function(){
