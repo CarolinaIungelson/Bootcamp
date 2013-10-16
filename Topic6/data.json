@@ -1,0 +1,33 @@
+var data = {
+  "name": "Carolina Iungelson",
+  "location": "Bahía Blanca",
+  "dateBirth": "27/03/1986",
+  "email": "carolinaiun@gmail.com",
+  "education": [
+    {
+      "startYear": 2004,
+      "field": "Computer engineering",
+      "schoolName": "Universidad Nacional del Sur",
+      "endYear": 2013
+    },
+    {
+      "startYear": 2001,
+      "field": "Business",
+      "schoolName": "Escuela Superior de Comercio",
+      "endYear": 2003
+    }
+  ],
+  "languages": [
+  	{
+  		"name": "English",
+    	"certificate": "First Cerificate in English",
+    	"year": 2003
+    }
+  ],
+  "workExperience": [
+    {
+      "place": "Stix Computacion",
+      "date": 2009
+    }
+  ]
+};

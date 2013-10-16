@@ -1,0 +1,15 @@
+td,li {
+	font-family:Georgia;
+}
+.title {
+	padding-right: 40px;
+}
+.main-container {	
+	background-color: lightblue;
+}
+.container {
+	padding: 1%;
+}
+.apart {
+	clear: both;
+}
