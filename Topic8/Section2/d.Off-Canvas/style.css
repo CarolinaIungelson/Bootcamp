@@ -1,0 +1,107 @@
+body {
+	margin: 0 4%;
+}
+.site-name {
+	background: lightblue;
+	padding: 20px;
+}
+.site-name h1 { 
+	margin: 0;
+}
+.navigation {
+	float: left;
+	width: 100%;
+	background: #333;
+}
+.navigation ul {
+	margin: 0;
+	padding: 0;
+}
+.navigation ul li {
+	list-style-type: none;
+	display: inline;
+}
+.navigation li a {
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color: #fff;
+	text-decoration: none;
+	border-right: 1px solid #fff;
+}
+.navigation li a:hover { 
+	background: #383;
+}
+.navigation-button {	
+	background-color: white;	
+}
+.text-aside {
+	float: right;
+	width: 25%;
+	padding: 20px 0;	
+	display: inline;
+}
+.copyright {
+	clear: both;
+	background: lightblue;
+	text-align: left;
+	padding: 20px;
+	height: 1%;
+}
+.container {	
+	width: 100%;
+}
+.content-container {	
+	width: 100%;
+} 
+.content {	
+	float: left;		
+	width: 40%;
+	padding: 20px 0;
+	margin: 0 0 0 2%;
+	display: inline;
+}
+.sub-header {		
+	padding: 0;
+	background: none;	
+	margin-top: 20px;
+	margin-bottom:20px;	
+}
+.left-aside {
+	float: left;	
+}
+.right-button {
+	float: right;
+	display: none;
+}
+.left-button {
+	float: left;
+	display: none;
+}
+@media screen and (max-width: 1524px) {   
+	body {
+		margin:0; 
+	}
+}
+@media screen and (max-width: 1024px) {
+	.content {
+		width: 65%;
+	}
+	.right-aside {
+		display: none;
+	}
+	.right-button {
+		display: inline;
+	}
+}
+@media screen and (max-width: 480px) {	
+	.left-aside {
+		display: none;
+	}
+	.left-button {
+		display: inline;
+	}
+	.content {
+		width: 100%;
+	}
+}

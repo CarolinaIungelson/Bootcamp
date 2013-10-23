@@ -1,0 +1,70 @@
+body {
+	margin: 0 4%;
+}
+.site-name {
+	background: lightblue;
+	padding: 20px;
+}
+.site-name h1 { 
+	margin: 0;
+}
+.navigation {
+	float: left;		
+	padding: 20px 0;
+}
+.navigation ul {
+	margin: 0;
+	padding: 0;	
+}
+.navigation ul li {
+	list-style-type: none;	
+}
+.navigation li a {	
+	float: left;	
+	padding: 5px 10px;		
+}
+.text-aside {		
+	padding: 20px;	
+	display: inline;
+}
+.copyright {
+	clear: both;
+	background: lightblue;
+	text-align: left;
+	padding: 20px;
+	height: 1%;
+}
+.content-container {	
+	width: 90%;
+	float: right;	
+} 
+.content {			
+	padding: 20px;	
+	display: inline;
+}
+.sub-header {		
+	padding: 0;
+	background: none;	
+	margin-top: 20px;
+	margin-bottom:20px;	
+}
+@media screen and (max-width: 945px) {
+	body {
+		margin: 0;
+	}
+	.container {
+  	display: -webkit-flex;
+  	-webkit-flex-direction: column;
+
+  	display: flex;
+    flex-direction: column;
+	}	
+	nav {		
+		 -webkit-order: 1;
+            order: 1;
+	}
+	.content-container {						
+		 -webkit-order: 2;
+             order: 2;  	
+  } 
+}
