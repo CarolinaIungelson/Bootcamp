@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <title>Topic 7 - Angular</title>
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="movie-app">
+      <h1>Movies</h1>
+      <div ng-controller="MovieCtrl">  
+        <form ng-submit="addMovie()">
+          <input type="text" ng-model="movieTitle"  size="30" placeholder="Enter a favorite movie.">   
+        </form>
+        <ul id="movie-list" class="movie-list">
+          <li ng-repeat="movie in movies">  
+            <span>{{movie.title}}</span>
+          </li>
+        </ul>      
+      </div>
+    </div> 
+  </body>
+</html>

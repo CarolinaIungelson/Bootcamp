@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Topic 7 - Backbone</title>
+  <meta charset="utf-8"> 
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <div id="movie-app" class="movie-app">
+    <header>
+      <h1>Movies</h1>
+      <input id="new-movie" type="text" placeholder="Enter a favorite movie.">
+    </header>
+
+    <section id="main" class="main">      
+      <ul id="movie-list" class="movie-list"></ul>
+    </section>  
+  </div>
+
+  <section id="details" class="movie-app" >     
+  </section>
+ 
+
+  <script src="js/jquery.js"></script>  
+  <script src="js/underscore.js"></script>
+  <script src="js/backbone.js"></script>
+  <script src="js/backbone.localStorage-min.js"></script>  
+  <script src="js/script.js"></script>
+
+  <script type="text/template" id="item-template">
+    <div class="view">      
+      <span><%- title %></span>
+      <a href="#details/<%- id %>" class="details"></a>
+      <a class="destroy"></a>
+    </div>
+    <input class="edit" type="text" value="<%- title %>" />
+  </script>
+
+  <script type="text/template" id="details-template">
+    <h1>Movie</h1>
+    <div class="details-view"> 
+      <ul class="movie-list">         
+        <li>Title: <%- title %></li>      
+        <li>Genre: <%- genre %></li>
+      </ul>
+    </div>    
+  </script>
+
+</body>
+</html>
